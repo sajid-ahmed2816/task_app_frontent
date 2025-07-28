@@ -13,7 +13,7 @@ function App() {
   const onSubmit = async (data) => {
     setLoading(true);
     try {
-      const response = await axios.post('http://taskappbackend-production-f043.up.railway.app/api/pdf/generate', data, {
+      const response = await axios.post('https://taskappbackend.up.railway.app/api/pdf/generate', data, {
         responseType: 'blob', // receive PDF as blob
         headers: {
           'Content-Type': 'application/json', // explicitly tell it's JSON you're sending
